@@ -10,7 +10,7 @@ int main()
     float sgpa;
     char opt;
     //************************************************************************
-    printf("Do you know the credit of your subjects??\nput small y if YES put small n if NO\n");
+    printf("Do you know the credit of your subjects???\nput small y if YES put small n if NO\n");
     scanf("%c",&opt);
     switch (opt)
     {
