@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
     int cred[1000],mark[1000];
@@ -7,7 +8,25 @@ int main()
     int temp[100];
     int grad[100];
     float sgpa;
+    char opt;
     //************************************************************************
+    printf("Do you know the credit of your subjects??\nput small y if YES put small n if NO\n");
+    scanf("%c",&opt);
+    switch (opt)
+    {
+    case ('n'):
+
+        printf("Type this website adress on your browser\nhttps://vtu.ac.in/b-e-scheme-syllabus/#menu0");
+        exit (0);
+        break;
+    case('y'):
+    goto cal;
+    
+    default:printf("Invalid entry\n");
+            exit(0);
+        break;
+    }
+    cal:
     printf("Enter the total no of the Subjects including lab\n");
     scanf("%d",&n);
     for(i=0;i<n;i++)
